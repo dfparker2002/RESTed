@@ -1,0 +1,189 @@
+body {
+	font-family: Helvetica, arial, freesans, clean, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
+	font-size: 13px;
+	box-sizing: border-box;
+	margin: 0;
+	height:100%;
+}
+
+.content table {
+	width: 100%;
+	border-spacing:0;
+}
+
+td {
+	padding: 5px;
+}
+
+tr:hover {
+	border: 1px solid red;
+	background-color: #E6E6E6;
+}
+
+th {
+	padding: 5px;
+	text-align: left;
+	border-bottom-color: rgb(221, 221, 221);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+
+a:visited {
+}
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 10px;
+	background-color: gray;
+}
+
+fieldset > legend {
+	padding: 0;
+	text-transform: uppercase;
+	color: gray;
+}
+
+.menu {
+	background-color: black;
+	padding: 10px;
+}
+
+.menu a {
+	color: gray;
+}
+
+.menu form {
+	display:inline;
+	float: right;
+}
+
+.menu form input {
+	padding: 0;
+	border: 0;
+	background-color: gray;
+}
+
+.menu form button {
+	padding: 0;
+	border: 0;
+	background-color: gray;
+}
+
+.tools {
+	padding: 10px;
+}
+
+.actions {
+	visibility: hidden;
+}
+
+tr:hover .actions {
+	visibility: visible;
+}
+
+.breadcrumb {
+	padding: 10px;
+	background-color: #E6E6E6;
+	-webkit-box-shadow: inset 0px 1px 6px -1px rgba(71,71,71,1);
+	-moz-box-shadow: inset 0px 1px 6px -1px rgba(71,71,71,1);
+	box-shadow: inset 0px 1px 6px -1px rgba(71,71,71,1);
+}
+
+.breadcrumb a {
+	color: gray;
+}
+
+.breadcrumb a:after {
+	content: ' / ';
+	color: lightgray;
+}
+
+.tools {
+	padding: 10px;
+}
+
+.content {
+	padding: 10px;
+}
+
+.breadcrumb form {
+	display: inline;
+}
+
+.breadcrumb input {
+	border: 0 none;
+	padding: 0;
+	font-weight: bold;
+}
+
+textarea {
+	box-sizing: border-box;
+	width: 100%;
+	display:block;
+	height: 100%;
+	border: 0;
+	margin: 0;
+	resize: none;
+	background-color: black;
+	color: lime;
+	padding: 10px;
+}
+
+.imageview > img {
+	margin: 10px;
+-webkit-box-shadow: 8px 8px 25px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 8px 8px 25px -4px rgba(0,0,0,0.75);
+box-shadow: 8px 8px 25px -4px rgba(0,0,0,0.75);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+}
+
+.texteditor {
+	background-color: red;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 110px;
+	width: 100%;
+	bottom: 0;
+}
+
+.texteditor > button {
+	position: fixed;
+	right: 10px;
+  top: 80px;
+}
+
+.dialog-background {
+	background-color: rgba(0, 0, 0, 0.75);
+}
+
+.dialog {
+-webkit-box-shadow: 8px 8px 25px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 8px 8px 25px -4px rgba(0,0,0,0.75);
+box-shadow: 8px 8px 25px -4px rgba(0,0,0,0.75);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+	margin: 25px;
+	padding: 10px;
+	background-color: white;
+}
+
+.dialog-header {
+	border-bottom: 1px solid gray;
+}
+
+.dialog h1 {
+	margin: 0;
+}
