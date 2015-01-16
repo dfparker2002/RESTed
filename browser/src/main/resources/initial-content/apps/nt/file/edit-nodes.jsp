@@ -9,6 +9,9 @@
 	<c:when test="${fn:startsWith(properties['jcr:mimeType'], 'text/')}">
 		<sling:include replaceSelectors="edit-text" />
 	</c:when>
+	<c:when test="${fn:startsWith(properties['jcr:mimeType'], 'application/xml')}">
+		<sling:include replaceSelectors="edit-text" />
+	</c:when>
 	<c:when test="${fn:startsWith(properties['jcr:mimeType'], 'image/')}">
 		<sling:include replaceSelectors="view-image" />
 	</c:when>

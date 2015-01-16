@@ -9,11 +9,13 @@
 		</tr>
 	</thead>
 	<tbody>
+
 		<c:forEach var="child" items="${sling:listChildren(resource)}">
 			<tr>
 				<td><a href="${appPath}.html${child.path}">${child.name}</a></td>
 				<td>${child.resourceType}</td>
 			</tr>
 		</c:forEach>
+
 	</tbody>
 </table>

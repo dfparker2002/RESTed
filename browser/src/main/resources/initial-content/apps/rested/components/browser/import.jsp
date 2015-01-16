@@ -10,20 +10,10 @@
 	<body class="dialog-background">
 
 		<div class="dialog">
-			<h1>move node</h1>
+			<h1>import node</h1>
 			<hr>
 
-			<sling:adaptTo adaptable="${sling:getResource(resourceResolver,contentPath)}" adaptTo="javax.jcr.Node" var="node" />
-
-			<c:choose>
-				<c:when test="${not empty node}">
-					<sling:include path="${contentPath}" replaceSelectors="move-node" />
-				</c:when>
-				<c:otherwise>
-					This is not a JCR Node, cancel
-					<a href="${appPath}.html${contentPath}/..">cancel</a>
-				</c:otherwise>
-			</c:choose>
+			<sling:include path="${contentPath}" replaceSelectors="import-node" />
 
 		</div>
 	</body>

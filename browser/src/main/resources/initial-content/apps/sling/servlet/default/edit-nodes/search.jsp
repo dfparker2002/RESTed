@@ -12,6 +12,7 @@
 	</thead>
 	<tbody>
 		<sling:findResources query="SELECT * FROM [nt:base] AS n WHERE LOCALNAME(n) LIKE '%${param.q}%' AND ISDESCENDANTNODE('${resource.path}')" language="JCR-SQL2" var="result" />
+
 		<c:forEach var="found" items="${result}">
 			<tr>
 				<td>
@@ -30,5 +31,6 @@
 				</td>
 			</tr>
 		</c:forEach>
+
 	</tbody>
 </table>
