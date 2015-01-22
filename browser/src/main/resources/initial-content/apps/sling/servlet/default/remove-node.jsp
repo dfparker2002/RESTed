@@ -2,7 +2,7 @@
 <%@include file="/apps/rested/global.jsp"%>
 
 <p>Are you really sure you want to remove this node?
-<form method="POST" action="${ctxPath}${resource.path}" enctype="multipart/form-data">
+<form method="POST" action="${ctxPath}${resource.parent.path}" enctype="multipart/form-data">
 	<input type="hidden" name=":operation" value="delete" />
 	<input type="hidden" name=":redirect" value="${appPath}.html${resource.parent.path}" />
 
