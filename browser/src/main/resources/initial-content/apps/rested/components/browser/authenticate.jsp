@@ -13,7 +13,7 @@
 			<h1>authenticate path ${contentPath}</h1>
 			<hr>
 
-			<form method="post" action="/j_security_check" enctype="multipart/form-data" accept-charset="UTF-8">
+			<form method="post" action="${ctxPath}/j_security_check" enctype="multipart/form-data" accept-charset="UTF-8">
 				<fieldset>
 					<legend>your credentials</legend>
 
@@ -27,7 +27,7 @@
 					<label class="control-label" for="j_password">password</label>
 					<input id="j_password" name="j_password" type="password" accesskey="p">
 
-					<a class="btn" href="system/sling/logout.html">Logout</a>
+					<a class="btn" href="${ctxPath}/system/sling/logout.html">Logout</a>
 					<button type="submit">Login</button>
 				</fieldset>
 			</form>

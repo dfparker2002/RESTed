@@ -3,7 +3,7 @@
 
 <sling:adaptTo adaptable="${resource}" adaptTo="org.apache.sling.api.resource.ValueMap" var="properties" />
 
-<form method="post" action="${resource.path}" enctype="multipart/form-data">
+<form method="post" action="${ctxPath}${resource.path}" enctype="multipart/form-data">
 	<fieldset>
 		<legend>rendering scripts</legend>
 

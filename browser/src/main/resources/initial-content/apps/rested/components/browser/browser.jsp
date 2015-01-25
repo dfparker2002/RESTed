@@ -10,7 +10,7 @@
 	<body>
 		<div class="menu">
 			<a href="${appPath}.authenticate.html${contentPath}">login</a>
-			<a href="/system/console">console</a>
+			<a href="${ctxPath}/system/console" target="_blank">console</a>
 			<form action="${appPath}.search.html${contentPath}">
 				<input type="text" name="q" value="${param.q}"/>
 				<button type="submit">search</button>
@@ -23,6 +23,10 @@
 
 		<div class="tools">
 			<sling:include path="${contentPath}" replaceSelectors="path-tools${appSelectors}" />
+		</div>
+
+		<div class="properties">
+			<sling:include path="${contentPath}" replaceSelectors="list-properties${appSelectors}" />
 		</div>
 
 		<div class="content">

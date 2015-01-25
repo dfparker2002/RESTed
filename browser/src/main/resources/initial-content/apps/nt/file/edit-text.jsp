@@ -9,6 +9,7 @@
 %>
 <form method="POST" action="${ctxPath}${resource.path}/_jcr_content" enctype="multipart/form-data">
 	<input type="hidden" name=":redirect" value="<%=slingRequest.getRequestURL()%>" />
+	<input type="hidden" name="_charset_" value="UTF-8" />
 	<div class="texteditor">
 		<button type="submit">save</button>
 		<textarea name="jcr:data" autocomplete="off" autocorrect="off" autocapitalize="off" 

@@ -6,6 +6,25 @@ body {
 	height:100%;
 }
 
+.properties table td {
+	padding: 1px;
+}
+
+.properties table td:first-child {
+	padding-right: 10px;
+	color: gray;
+	text-align: right;
+}
+
+.properties:not(:empty) {
+	padding: 10px;
+  border-spacing: 0;
+}
+
+.properties table {
+  border-spacing: 0; 
+}
+
 .content table {
 	width: 100%;
 	border-spacing:0;

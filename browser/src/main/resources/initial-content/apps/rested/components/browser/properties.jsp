@@ -13,7 +13,7 @@
 			<h1>node properties</h1>
 			<hr>
 
-			<sling:include path="${contentPath}" replaceSelectors="list-properties" />
+			<sling:include path="${contentPath}" replaceSelectors="edit-properties" />
 			<sling:include path="${contentPath}" replaceSelectors="new-property" />
 			<sling:include path="${contentPath}" replaceSelectors="list-mixins" />
 			<sling:include path="${contentPath}" replaceSelectors="list-scripts" />
